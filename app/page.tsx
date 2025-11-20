@@ -9,6 +9,7 @@ import {
   Newspaper,
   Handshake,
   Server,
+  ChevronsRight,
 } from "lucide-react";
 import { Button, Card, CardContent } from "@/components/ui";
 import Image from "next/image";
@@ -18,13 +19,21 @@ export default function Home() {
     <div className="min-h-screen font-sans">
       <section
         id="home"
-        className="relative min-h-svh bg-cover bg-center flex items-center"
+        className="relative min-h-[120vh] bg-cover bg-center flex items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero.webp')`,
+          backgroundImage: `url('/hero.webp')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl">
+        <div
+          className="absolute inset-0 z-10 opacity-70"
+          style={{
+            backgroundImage: `linear-gradient(240deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1) 68%)`,
+          }}
+        />
+        <div className="px-6 relative z-20">
+          <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
               Consulting & Managed
               <br />
@@ -34,7 +43,8 @@ export default function Home() {
               Streamline and secure your business operations in just 90 Days.
             </p>
             <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-6 text-lg">
-              ASK FOR CONSULTATION →
+              ASK FOR CONSULTATION{" "}
+              <ChevronsRight className="w-10 h-10" strokeWidth={4} />
             </Button>
           </div>
         </div>
