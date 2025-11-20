@@ -1,5 +1,6 @@
-import { MapPin, Phone, Mail } from "lucide-react";
 import Link from "next/link";
+import { MapPin, Phone, Mail } from "lucide-react";
+
 import { Button, Input, Textarea, Card, CardContent } from "@/components/ui";
 
 export default function Contact() {

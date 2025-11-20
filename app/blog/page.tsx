@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import { Card, CardContent } from "@/components/ui";
 import { blogPosts } from "@/lib/blog";
 

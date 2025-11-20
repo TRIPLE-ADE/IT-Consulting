@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Users,
   Eye,
@@ -11,8 +12,8 @@ import {
   Server,
   ChevronsRight,
 } from "lucide-react";
+
 import { Button, Card, CardContent } from "@/components/ui";
-import Image from "next/image";
 
 export default function Home() {
   return (

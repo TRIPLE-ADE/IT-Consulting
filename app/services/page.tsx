@@ -1,8 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui";
 import { services } from "@/lib/services";
-import Image from "next/image";
 
 export default function Services() {
   return (

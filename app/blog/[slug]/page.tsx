@@ -1,9 +1,9 @@
-import { Header, Footer } from "@/components/index";
-import { blogPosts } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Input, Button } from "@/components/ui";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+
+import { Input, Button } from "@/components/ui";
+import { blogPosts } from "@/lib/blog";
 
 interface PageProps {
   params: Promise<{ slug: string }>;

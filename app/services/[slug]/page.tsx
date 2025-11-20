@@ -1,9 +1,9 @@
-import { Header, Footer } from "@/components/index";
-import { services } from "@/lib/services";
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ChevronRight, ChevronsRight, FileText } from "lucide-react";
 import Image from "next/image";
+import { notFound } from "next/navigation";
+import { ChevronsRight } from "lucide-react";
+
+import { services } from "@/lib/services";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
