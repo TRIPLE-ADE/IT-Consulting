@@ -152,17 +152,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-
-      {/* CTA Bar */}
-      <section className="bg-orange-600 py-10 relative">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-white text-2xl font-semibold">
-            Need help? Call our award-winning support team 24/7 at (979)
-            661-6734
-          </h3>
-          <div className="w-4 h-4 bg-orange-600 rotate-45 mx-auto -mb-12 mt-8 translate-y-1/2 border-r border-b border-orange-500 absolute bottom-0 left-1/2 -translate-x-1/2"></div>
-        </div>
-      </section>
     </div>
   );
 }

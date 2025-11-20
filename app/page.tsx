@@ -263,8 +263,8 @@ export default function Home() {
             as your technology partner, anywhere in USA.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-0 shadow-lg overflow-hidden">
+          <div className="grid md:grid-cols-2">
+            <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
                   src="/IT-Strategic-Planning.webp"
@@ -289,7 +289,7 @@ export default function Home() {
               </div>
             </Card>
 
-            <Card className="border-0 shadow-lg overflow-hidden">
+            <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
                   src="/IT-Procurement-Services.webp"
@@ -314,7 +314,7 @@ export default function Home() {
               </div>
             </Card>
 
-            <Card className="border-0 shadow-lg overflow-hidden">
+            <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
                   src="/IT-Assessment-Services.webp"
@@ -338,7 +338,7 @@ export default function Home() {
               </div>
             </Card>
 
-            <Card className="border-0 shadow-lg overflow-hidden">
+            <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
                   src="/IT-Services.webp"
