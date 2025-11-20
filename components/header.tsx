@@ -48,7 +48,7 @@ export function Header() {
               HOME
               <span className={getUnderlineClass("/")} />
             </Link>
-            <span className="ml-5 text-gray-900 text-xl font-light">|</span>
+            <span className="ml-5 text-gray-800 text-xl font-semibold">|</span>
           </div>
 
           <div className="flex items-center h-full relative">
@@ -62,7 +62,7 @@ export function Header() {
               ABOUT US
               <span className={getUnderlineClass("/about")} />
             </Link>
-            <span className="ml-5 text-gray-900 text-xl font-light">|</span>{" "}
+            <span className="ml-5 text-gray-800 text-xl font-semibold">|</span>{" "}
           </div>
 
           {/* Services Dropdown */}
@@ -87,7 +87,7 @@ export function Header() {
                 </span>
                 <span className={getUnderlineClass("/services")} />
               </Link>
-              <span className="ml-5 text-gray-900 text-xl font-light">|</span>{" "}
+              <span className="ml-5 text-gray-800 text-xl font-semibold">|</span>{" "}
             </div>
 
             <div className="absolute left-0 top-full w-64 bg-white shadow-xl rounded-b-md overflow-hidden hidden group-hover:block transition-all duration-200 ease-in-out transform origin-top z-50">
@@ -137,7 +137,7 @@ export function Header() {
               BLOG
               <span className={getUnderlineClass("/blog")} />
             </Link>
-            <span className="ml-5 text-gray-900 text-xl font-light">|</span>{" "}
+            <span className="ml-5 text-gray-800 text-xl font-semibold">|</span>{" "}
           </div>
 
           <Link

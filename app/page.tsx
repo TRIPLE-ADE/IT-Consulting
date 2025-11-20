@@ -11,6 +11,7 @@ import {
   Handshake,
   Server,
   ChevronsRight,
+  ArrowRight,
 } from "lucide-react";
 
 import { Button, Card, CardContent } from "@/components/ui";
@@ -53,29 +54,31 @@ export default function Home() {
 
       {/* Four Pillars Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 shadow-xl shadow-">
-            <Card className="border-0 rounded-none">
-              <CardContent className="p-8">
+        <div className="px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 shadow-md inset-shadow-black divide-x divide-gray-200">
+            <Card className="group relative">
+              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-12">
                 <Users className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">
                   People
                 </h3>
-                <p className="text-gray-600">
-                  You deserve the best. We have the best. Simply put, we care –
+                <p className="text-gray-600 text-lg font-medium">
+                  You deserve the best. We have the best. Simply put, we care
                   every single one of us, from the account managers to the
                   technicians.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-0 rounded-none">
-              <CardContent className="p-8">
+            <Card className="group relative">
+              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-12">
                 <Eye className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">
                   Purpose
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg font-medium">
                   Your security and peace of mind drive us to be better
                   everyday. Simplifying the complex, saving you money and
                   staying ahead of rapidly changing technology.
@@ -83,13 +86,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 rounded-none">
-              <CardContent className="p-8">
+            <Card className="group relative">
+              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-12">
                 <Settings className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">
                   Process
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg font-medium">
                   It's not just what we do, but how we do it. Our time tested
                   delivery methods, communication process and premium software
                   and hardware tools.
@@ -97,13 +101,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 rounded-none">
-              <CardContent className="p-8">
+            <Card className="group relative">
+              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-12">
                 <CreditCard className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">
                   Our Strategy
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg font-medium">
                   We'll help you navigate the tech challenges of your industry,
                   keep your data secure hackers, and eliminate IT issues that
                   stunt growth.
@@ -136,8 +141,8 @@ export default function Home() {
                 technical experience backed by our custom solutions, process and
                 unparalleled customer service, we deliver every time.
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8">
-                READ MORE →
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white font-semibold text-lg px-10">
+                READ MORE <ArrowRight className="w-10 h-10" strokeWidth={4} />
               </Button>
             </div>
           </div>

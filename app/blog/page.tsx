@@ -66,12 +66,11 @@ export default function Blog() {
                       {post.excerpt}
                     </p>
                     <div className="flex items-center justify-between border-t border-gray-100 pt-6">
-                      <Link
-                        href={`/blog/${post.slug}`}
+                      <span
                         className="text-orange-600 font-bold text-sm uppercase tracking-wide hover:text-orange-700 flex items-center gap-1"
                       >
                         Read More &raquo;
-                      </Link>
+                      </span>
                     </div>
                     <div className="mt-4 text-xs text-gray-400 font-medium flex items-center gap-2">
                       <span>{post.date}</span>
