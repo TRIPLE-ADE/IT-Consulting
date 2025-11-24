@@ -271,7 +271,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/assets/services/strategic-1.webp"
+                  src="/assets/services/services-3.webp"
                   alt="IT Strategic Planning"
                   className="w-full h-full object-cover"
                   width={500}
@@ -298,7 +298,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/assets/services/procurement-1.webp"
+                  src="/assets/services/services-2.webp"
                   alt="IT Procurement Services"
                   className="w-full h-full object-cover"
                   width={500}
@@ -325,7 +325,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/assets/services/assessment-1.webp"
+                  src="/assets/services/services-1.webp"
                   width={500}
                   height={500}
                   alt="IT Assessment Services"
@@ -351,7 +351,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/assets/services/manages-1.webp"
+                  src="/assets/services/services-5.webp"
                   width={500}
                   height={500}
                   alt="Managed IT Services"
