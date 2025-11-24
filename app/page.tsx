@@ -19,8 +19,8 @@ import { Button, Card, CardContent } from "@/components/ui";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-sans">
-      <section id="home" className="relative min-h-svh w-full flex items-center">
+    <div className="font-sans">
+      <section id="home" className="relative min-h-svh w-full flex flex-col justify-center">
         <Image
           src="/assets/hero.webp"
           alt="Hero"
@@ -149,7 +149,7 @@ export default function Home() {
                   size="lg"
                   className="bg-blue-800 hover:bg-blue-900 text-white font-semibold text-lg px-10"
                 >
-                  READ MORE <ArrowRight className="w-10 h-10" strokeWidth={4} />
+                  READ MORE <span className="sr-only">about why we are trusted</span> <ArrowRight className="w-10 h-10" strokeWidth={4} />
                 </Button>
               </Link>
             </div>
@@ -288,7 +288,7 @@ export default function Home() {
                   </p>
                   <Link href="/services/it-strategic-planning">
                     <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
-                      READ MORE <ArrowRight className="w-5 h-5" />
+                      READ MORE <span className="sr-only">about IT Strategic Planning</span> <ArrowRight className="w-5 h-5" />
                     </Button>
                   </Link>
                 </CardContent>
@@ -315,7 +315,7 @@ export default function Home() {
                   </p>
                   <Link href="/services/it-procurement-services">
                     <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
-                      READ MORE <ArrowRight className="w-5 h-5" />
+                      READ MORE <span className="sr-only">about IT Procurement Services</span> <ArrowRight className="w-5 h-5" />
                     </Button>
                   </Link>
                 </CardContent>
@@ -341,7 +341,7 @@ export default function Home() {
                   </p>
                   <Link href="/services/it-assessment-services">
                     <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
-                      READ MORE <ArrowRight className="w-5 h-5" />
+                      READ MORE <span className="sr-only">about IT Assessment Services</span> <ArrowRight className="w-5 h-5" />
                     </Button>
                   </Link>
                 </CardContent>
@@ -368,7 +368,7 @@ export default function Home() {
                   </p>
                   <Link href="/services/managed-it-services">
                     <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
-                      READ MORE <ArrowRight className="w-5 h-5" />
+                      READ MORE <span className="sr-only">about Managed IT Services</span> <ArrowRight className="w-5 h-5" />
                     </Button>
                   </Link>
                 </CardContent>
