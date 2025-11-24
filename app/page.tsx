@@ -217,7 +217,7 @@ export default function Home() {
                 Our IT consulting services leverage specialists with a year of
                 experience in your industry. We'll deploy best practices,
                 technology, and processes that align to the unique challenges of
-                your industry – keeping your data secure, your network running,
+                your industry keeping your data secure, your network running,
                 and budget in check.
               </p>
             </div>
