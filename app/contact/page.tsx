@@ -32,11 +32,11 @@ export default function Contact() {
         </div>
 
         <div className="container mx-auto px-4 relative z-20">
-          <h1 className="text-4xl font-bold mb-4 border-l-4 border-orange-600 pl-6">
+          <h1 className="text-4xl font-bold mb-4 border-l-4 border-blue-800 pl-6">
             Contact Us
           </h1>
           <div className="flex items-center text-sm font-medium text-gray-300 space-x-2">
-            <Link href="/" className="hover:text-orange-600 transition-colors">
+            <Link href="/" className="hover:text-blue-900 transition-colors">
               Home
             </Link>
             <span>&raquo;</span>
@@ -93,7 +93,7 @@ export default function Contact() {
                         className="bg-gray-50 border-gray-200 min-h-[150px] text-base resize-none"
                       />
                     </div>
-                    <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg font-semibold uppercase rounded w-full md:w-auto">
+                    <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold uppercase rounded w-full md:w-auto">
                       Submit
                     </Button>
                   </form>
@@ -110,17 +110,17 @@ export default function Contact() {
                   </h3>
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
-                      <MapPin className="w-6 h-6 text-orange-600 shrink-0 mt-1" />
+                      <MapPin className="w-6 h-6 text-blue-900 shrink-0 mt-1" />
                       <p className="text-gray-600 text-lg">
                         20333 Tx-249 Suite 226 Houston Tx 77070
                       </p>
                     </div>
                     <div className="flex items-center gap-4">
-                      <Phone className="w-6 h-6 text-orange-600 shrink-0" />
+                      <Phone className="w-6 h-6 text-blue-900 shrink-0" />
                       <p className="text-gray-600 text-lg">(979) 661-6734</p>
                     </div>
                     <div className="flex items-center gap-4">
-                      <Mail className="w-6 h-6 text-orange-600 shrink-0" />
+                      <Mail className="w-6 h-6 text-blue-900 shrink-0" />
                       <p className="text-gray-600 text-lg">
                         info@consultingwithacause.com
                       </p>

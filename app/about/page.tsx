@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Users, Trophy, Clock } from "lucide-react";
+import {
+  Users,
+  Trophy,
+  Clock,
+  ClipboardList,
+  ThumbsUp,
+  Award,
+  Handshake,
+  Lightbulb,
+} from "lucide-react";
 
 import { Button, Card, CardContent } from "@/components/ui";
 
@@ -23,11 +32,11 @@ export default function AboutUs() {
           }}
         />
         <div className="container mx-auto px-4 relative z-20">
-          <h1 className="text-4xl font-bold mb-4 border-l-4  pl-6 border-orange-600">
+          <h1 className="text-4xl font-bold mb-4 border-l-4  pl-6 border-blue-800">
             About Us
           </h1>
           <div className="flex items-center text-sm font-medium text-gray-300 space-x-2">
-            <Link href="/" className="hover:text-orange-600 transition-colors">
+            <Link href="/" className="hover:text-blue-900 transition-colors">
               Home
             </Link>
             <span>&raquo;</span>
@@ -41,7 +50,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
             <div>
-              <div className="border-l-4 border-orange-600 pl-6 mb-6">
+              <div className="border-l-4 border-blue-900 pl-6 mb-6">
                 <h2 className="text-4xl font-bold text-gray-900 leading-tight">
                   Why We're the Most Trusted IT Consulting
                 </h2>
@@ -56,12 +65,9 @@ export default function AboutUs() {
             <Card>
               <CardContent className="p-6 flex flex-col gap-6">
                 <div className="shrink-0">
-                  <Image
-                    src="/about-icon1.webp"
-                    alt="About Icon 1"
-                    width={80}
-                    height={80}
-                    className="w-20 h-20 text-orange-600"
+                  <ClipboardList
+                    className="w-20 h-20 text-blue-900"
+                    strokeWidth={1.5}
                   />
                 </div>
                 <div>
@@ -81,12 +87,9 @@ export default function AboutUs() {
             <Card>
               <CardContent className="p-6 flex flex-col gap-6">
                 <div className="shrink-0">
-                  <Image
-                    src="/about-icon2.webp"
-                    alt="About Icon 2"
-                    width={80}
-                    height={80}
-                    className="w-20 h-20 text-orange-600"
+                  <ThumbsUp
+                    className="w-20 h-20 text-blue-900"
+                    strokeWidth={1.5}
                   />
                 </div>
                 <div>
@@ -120,7 +123,7 @@ export default function AboutUs() {
               />
             </div>
             <div>
-              <div className="border-l-4 border-orange-600 pl-6 mb-8">
+              <div className="border-l-4 border-blue-900 pl-6 mb-8">
                 <h2 className="text-4xl font-bold text-gray-900 mb-2">
                   Meet Our Brand New Solution
                 </h2>
@@ -131,7 +134,7 @@ export default function AboutUs() {
                 business issues in innovative ways that mesh intellectual
                 property with our consulting services.
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg font-semibold rounded">
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded">
                 Read More
               </Button>
             </div>
@@ -144,7 +147,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 items-center">
             <div className="order-2 md:order-1 bg-zinc-100 p-6">
-              <div className="border-l-4 border-orange-600 pl-6">
+              <div className="border-l-4 border-blue-900 pl-6">
                 <h2 className="text-4xl font-bold text-gray-900">
                   Some Reasons to Work Together
                 </h2>
@@ -153,12 +156,10 @@ export default function AboutUs() {
               <div>
                 <Card className="bg-transparent">
                   <CardContent className="p-6 flex gap-6 items-start">
-                    <Image
-                      src="/Quality.webp"
-                      alt="Best Quality"
-                      width={80}
-                      height={80}
-                      className="w-18 h-18 text-orange-600"
+                    <Award
+                      className="text-blue-900 shrink-0 w-18 h-18"
+                      strokeWidth={1.5}
+                      size={72}
                     />
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -176,12 +177,10 @@ export default function AboutUs() {
 
                 <Card className="bg-transparent">
                   <CardContent className="p-6 flex gap-6 items-start">
-                    <Image
-                      src="/Relation.webp"
-                      alt="Good Relation"
-                      width={40}
-                      height={40}
-                      className="w-16 h-12"
+                    <Handshake
+                      className="text-blue-900 shrink-0 w-16 h-12"
+                      strokeWidth={1.5}
+                      size={64}
                     />
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -199,12 +198,10 @@ export default function AboutUs() {
 
                 <Card className="bg-transparent">
                   <CardContent className="p-6 flex gap-6 items-start">
-                    <Image
-                      src="/Abilities.webp"
-                      alt="Abilities"
-                      width={80}
-                      height={80}
-                      className="w-16 h-16"
+                    <Lightbulb
+                      className="text-blue-900 shrink-0 w-16 h-16"
+                      strokeWidth={1.5}
+                      size={64}
                     />
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -248,7 +245,7 @@ export default function AboutUs() {
               />
             </div>
             <div>
-              <div className="border-l-4 border-orange-600 pl-6 mb-6">
+              <div className="border-l-4 border-blue-900 pl-6 mb-6">
                 <h2 className="text-4xl font-bold text-gray-900 mb-2">
                   Do You Need Help with IT Consulting
                 </h2>
@@ -266,7 +263,7 @@ export default function AboutUs() {
                 With So Many Choices Available Our Dedication And Focus On Your
                 Business Is What Sets Us Apart.
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg font-semibold rounded">
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded">
                 READ MORE
               </Button>
             </div>
@@ -285,7 +282,7 @@ export default function AboutUs() {
                   <div className="text-5xl font-bold text-gray-900 mb-1">
                     450+
                   </div>
-                  <div className="text-orange-600 font-semibold uppercase tracking-wide text-sm">
+                  <div className="text-blue-900 font-semibold uppercase tracking-wide text-sm">
                     Successfully
                   </div>
                   <div className="text-gray-600">Completed Projects</div>
@@ -300,7 +297,7 @@ export default function AboutUs() {
                   <div className="text-5xl font-bold text-gray-900 mb-1">
                     100+
                   </div>
-                  <div className="text-orange-600 font-semibold uppercase tracking-wide text-sm">
+                  <div className="text-blue-900 font-semibold uppercase tracking-wide text-sm">
                     Clients
                   </div>
                   <div className="text-gray-600">Satisfied Customer</div>
@@ -315,7 +312,7 @@ export default function AboutUs() {
                   <div className="text-5xl font-bold text-gray-900 mb-1">
                     5+
                   </div>
-                  <div className="text-orange-600 font-semibold uppercase tracking-wide text-sm">
+                  <div className="text-blue-900 font-semibold uppercase tracking-wide text-sm">
                     Years
                   </div>
                   <div className="text-gray-600">Experience</div>
@@ -331,7 +328,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
-              <div className="border-l-4 border-orange-600 pl-6 mb-6">
+              <div className="border-l-4 border-blue-900 pl-6 mb-6">
                 <h2 className="text-4xl font-bold text-gray-900 mb-2">
                   We Provide Solution on Your Business
                 </h2>
@@ -351,7 +348,7 @@ export default function AboutUs() {
                 into a business to offer objective insights and help put
                 suggested strategies into place.
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg font-semibold rounded">
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded">
                 READ MORE
               </Button>
             </div>

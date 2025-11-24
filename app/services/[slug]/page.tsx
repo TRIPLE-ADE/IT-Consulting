@@ -42,15 +42,15 @@ export default async function ServicePage({ params }: PageProps) {
         />
 
         <div className="container mx-auto px-4 relative z-20">
-            <h1 className="text-4xl font-bold mb-4 border-l-4 border-orange-600 pl-6">
+            <h1 className="text-4xl font-bold mb-4 border-l-4 border-blue-800 pl-6">
               {service.title}
             </h1>
             <div className="flex items-center text-sm font-medium text-gray-300 space-x-2">
               <Link
                 href="/"
-                className="hover:text-orange-600 transition-colors"
+                className="hover:text-blue-900 transition-colors"
               >
-                Home
+                Home    
               </Link>
               <span>&raquo;</span>
               <span className="text-white">{service.title}</span>
@@ -72,8 +72,8 @@ export default async function ServicePage({ params }: PageProps) {
                         href={`/services/${s.slug}`}
                         className={`block px-4 py-3 text-sm font-semibold transition-colors border-l-2 ${
                           s.slug === slug
-                            ? "bg-white text-orange-600 border-orange-600 shadow-sm"
-                            : "text-gray-600 border-transparent hover:bg-white hover:text-orange-600 hover:border-orange-300"
+                              ? "bg-white text-blue-900 border-blue-900 shadow-sm"
+                            : "text-gray-600 border-transparent hover:bg-white hover:text-blue-900 hover:border-blue-300"
                         }`}
                       >
                         {s.title}

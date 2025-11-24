@@ -24,11 +24,11 @@ export default function Services() {
         />
 
         <div className="container mx-auto px-4 relative z-20">
-          <h1 className="text-4xl font-bold mb-4 border-l-4 border-orange-600 pl-6">
+          <h1 className="text-4xl font-bold mb-4 border-l-4 border-blue-800 pl-6">
             SERVICES
           </h1>
           <div className="flex items-center text-sm font-medium text-gray-300 space-x-2">
-            <Link href="/" className="hover:text-orange-600 transition-colors">
+            <Link href="/" className="hover:text-blue-900 transition-colors">
               Home
             </Link>
             <span>&raquo;</span>
@@ -68,7 +68,7 @@ export default function Services() {
                       />
                     </div>
                     <CardContent className="p-8">
-                      <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors">
+                      <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors">
                         {service.title}
                       </h3>
                       <p className="text-gray-600 mb-6 leading-relaxed line-clamp-3">

@@ -7,119 +7,118 @@ import { ArrowRight } from "lucide-react";
 export function Footer() {
   return (
     <>
-      <section className="bg-orange-600 py-10">
+      <section className="bg-blue-900 py-8 md:py-10">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-white text-2xl font-semibold">
+          <h3 className="text-white text-lg md:text-2xl font-semibold">
             Need help? Call our award-winning support team 24/7 at (979)
             661-6734
           </h3>
-          <div className="w-4 h-4 bg-orange-600 rotate-45 mx-auto -mb-10 mt-8 translate-y-1/2 border-r border-b border-orange-500"></div>
+          <div className="w-4 h-4 bg-black rotate-45 mx-auto -mb-8 md:-mb-10 mt-6 md:mt-8 translate-y-1/2 border-r border-b border-blue-900"></div>
         </div>
       </section>
-      <footer className="bg-black text-white py-16 px-4 font-semibold text-xl">
-        <div className="flex gap-6 justify-between">
-          <Link href="/" className="relative w-80 h-25">
-            <Image
-              sizes="(max-width: 381px) 100vw, 381px"
-              fill
-              src="/logo.webp"
-              alt="Consulting with a Cause"
-              className="object-contain filter invert brightness-0"
-            />
-          </Link>
+      <footer className="bg-black text-white py-12 md:py-16 px-4 font-semibold text-xl">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="flex flex-col items-start">
+            <Link href="/" className="relative w-full max-w-[280px] h-20 md:h-24 mb-6">
+              <Image
+                sizes="(max-width: 381px) 100vw, 381px"
+                fill
+                src="/logo.webp"
+                alt="Consulting with a Cause"
+                className="object-contain filter invert brightness-0"
+              />
+            </Link>
+          </div>
+          
           <div>
-            <h3 className="text-3xl font-bold mb-6">Our Services</h3>
-            <ul className="space-y-8">
-              <li>
-                <Link
-                  href="/services"
-                  className="hover:text-orange-600 flex items-center gap-2"
-                >
-                  <div className="bg-white text-black rounded-full p-0.5">
-                    <ArrowRight className="w-5 h-5" />
-                  </div>
-                  IT Assessment
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="hover:text-orange-600 flex items-center gap-2"
-                >
-                  <div className="bg-white text-black rounded-full p-0.5">
-                    <ArrowRight className="w-5 h-5" />
-                  </div>
-                  IT Procurement
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="hover:text-orange-600 flex items-center gap-2"
-                >
-                  <div className="bg-white text-black rounded-full p-0.5">
-                    <ArrowRight className="w-5 h-5" />
-                  </div>
-                  IT Strategic
-                  Planning
-                </Link>
-              </li>
-            </ul>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6">Our Services</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:col-span-1">
+              <ul className="space-y-6 text-base md:text-lg">
+                <li>
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-600 flex items-start gap-3 group transition-colors"
+                  >
+                    <div className="bg-white text-black rounded-full p-0.5 mt-1 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <ArrowRight className="w-4 h-4" />
+                    </div>
+                    <span className="flex-1">IT Assessment Services</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-600 flex items-start gap-3 group transition-colors"
+                  >
+                    <div className="bg-white text-black rounded-full p-0.5 mt-1 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <ArrowRight className="w-4 h-4" />
+                    </div>
+                    <span className="flex-1">IT Procurement Services</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-600 flex items-start gap-3 group transition-colors"
+                  >
+                    <div className="bg-white text-black rounded-full p-0.5 mt-1 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <ArrowRight className="w-4 h-4" />
+                    </div>
+                    <span className="flex-1">IT Strategic Planning</span>
+                  </Link>
+                </li>
+              </ul>
+              <ul className="space-y-6 text-base md:text-lg">
+                <li>
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-600 flex items-start gap-3 group transition-colors"
+                  >
+                    <div className="bg-white text-black rounded-full p-0.5 mt-1 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <ArrowRight className="w-4 h-4" />
+                    </div>
+                    <span className="flex-1">IT Helpdesk Services</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/services"
+                    className="hover:text-blue-600 flex items-start gap-3 group transition-colors"
+                  >
+                    <div className="bg-white text-black rounded-full p-0.5 mt-1 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <ArrowRight className="w-4 h-4" />
+                    </div>
+                    <span className="flex-1">Managed IT Services</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul className="space-y-8 mt-12">
-              <li>
-                <Link
-                  href="/services"
-                  className="hover:text-orange-600 flex items-center gap-2"
-                >
-                  <div className="bg-white text-black rounded-full p-0.5">
-                    <ArrowRight className="w-5 h-5" />
-                  </div>
-                  IT Helpdesk Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="hover:text-orange-600 flex items-center gap-2"
-                >
-                  <div className="bg-white text-black rounded-full p-0.5">
-                    <ArrowRight className="w-5 h-5" />
-                  </div>
-                  Managed IT Services
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
+          <div className="w-full">
             <h3 className="text-xl font-bold mb-6">Newsletter</h3>
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-2 w-full">
               <Input
                 type="email"
                 placeholder="E-mail"
-                className="bg-white text-black"
+                className="bg-white text-black border-none h-12"
               />
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6">
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-6 h-12 w-full sm:w-auto whitespace-nowrap transition-colors">
                 Submit
               </Button>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800 flex justify-between items-center">
-          <p className="text-gray-500 text-sm">© 2018 All rights reserved</p>
+        <div className="container mx-auto mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row gap-4 justify-between items-center">
+          <p className="text-gray-500 text-sm text-center md:text-left">© 2018 All rights reserved</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-orange-600">
+            <a href="#" className="hover:text-blue-600 transition-colors text-white">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg>
             </a>
-            <a href="#" className="hover:text-orange-600">
+              <a href="#" className="hover:text-blue-600 transition-colors text-white">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
               </svg>

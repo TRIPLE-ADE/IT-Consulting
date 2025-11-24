@@ -21,9 +21,9 @@ export default function Home() {
     <div className="min-h-screen font-sans">
       <section
         id="home"
-        className="relative min-h-[120vh] bg-cover bg-center flex items-center"
+        className="relative min-h-svh bg-cover bg-center flex items-center"
         style={{
-          backgroundImage: `url('/hero.webp')`,
+          backgroundImage: `url('/assets/hero.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -44,7 +44,7 @@ export default function Home() {
             <p className="text-xl text-white mb-8">
               Streamline and secure your business operations in just 90 Days.
             </p>
-            <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-6 text-lg">
+            <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-8 py-6 text-lg">
               ASK FOR CONSULTATION{" "}
               <ChevronsRight className="w-10 h-10" strokeWidth={4} />
             </Button>
@@ -53,17 +53,17 @@ export default function Home() {
       </section>
 
       {/* Four Pillars Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 shadow-md inset-shadow-black divide-x divide-gray-200">
-            <Card className="group relative">
-              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-12">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <Card className="group relative bg-gray-50 rounded-lg">
+              <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-6">
                 <Users className="w-16 h-16 text-gray-700 mb-4" />
                 <h3 className="text-3xl font-bold text-gray-800 mb-4">
                   People
                 </h3>
-                <p className="text-gray-600 text-lg font-medium">
+                <p className="text-gray-600 font-medium">
                   You deserve the best. We have the best. Simply put, we care
                   every single one of us, from the account managers to the
                   technicians.
@@ -71,14 +71,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group relative">
-              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-12">
+            <Card className="group relative bg-gray-50 rounded-lg">
+              <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-6">
                 <Eye className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   Purpose
                 </h3>
-                <p className="text-gray-600 text-lg font-medium">
+                <p className="text-gray-600 font-medium">
                   Your security and peace of mind drive us to be better
                   everyday. Simplifying the complex, saving you money and
                   staying ahead of rapidly changing technology.
@@ -86,14 +86,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group relative">
-              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-12">
+            <Card className="group relative bg-gray-50 rounded-lg">
+              <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-6">
                 <Settings className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   Process
                 </h3>
-                <p className="text-gray-600 text-lg font-medium">
+                <p className="text-gray-600 font-medium">
                   It's not just what we do, but how we do it. Our time tested
                   delivery methods, communication process and premium software
                   and hardware tools.
@@ -101,14 +101,14 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group relative">
-              <div className="absolute mx-4 inset-0 h-1 bg-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <CardContent className="p-12">
+            <Card className="group relative bg-gray-50 rounded-lg">
+              <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <CardContent className="p-6">
                 <CreditCard className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   Our Strategy
                 </h3>
-                <p className="text-gray-600 text-lg font-medium">
+                <p className="text-gray-600 font-medium">
                   We'll help you navigate the tech challenges of your industry,
                   keep your data secure hackers, and eliminate IT issues that
                   stunt growth.
@@ -133,7 +133,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-gray-800 mb-6 border-l-4 border-orange-600 pl-4">
+              <h2 className="text-4xl font-bold text-gray-800 mb-6 border-l-4 border-blue-900 pl-4">
                 Why We're the Most Trusted
               </h2>
               <p className="text-gray-600 mb-8 text-lg">
@@ -141,7 +141,7 @@ export default function Home() {
                 technical experience backed by our custom solutions, process and
                 unparalleled customer service, we deliver every time.
               </p>
-              <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white font-semibold text-lg px-10">
+              <Button size="lg" className="bg-blue-800 hover:bg-blue-900 text-white font-semibold text-lg px-10">
                 READ MORE <ArrowRight className="w-10 h-10" strokeWidth={4} />
               </Button>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
                 <Trophy className="w-20 h-20 text-gray-700" />
                 <div>
                   <div className="text-5xl font-bold text-gray-800">450+</div>
-                  <div className="text-orange-600 font-semibold">
+                  <div className="text-blue-900 font-semibold">
                     Successfully
                   </div>
                   <div className="text-gray-600">Completed Projects</div>
@@ -171,7 +171,7 @@ export default function Home() {
                 <Users className="w-20 h-20 text-gray-700" />
                 <div>
                   <div className="text-5xl font-bold text-gray-800">100+</div>
-                  <div className="text-orange-600 font-semibold">Clients</div>
+                  <div className="text-blue-900 font-semibold">Clients</div>
                   <div className="text-gray-600">Satisfied Customer</div>
                 </div>
               </CardContent>
@@ -182,7 +182,7 @@ export default function Home() {
                 <Clock className="w-20 h-20 text-gray-700" />
                 <div>
                   <div className="text-5xl font-bold text-gray-800">5+</div>
-                  <div className="text-orange-600 font-semibold">Years</div>
+                  <div className="text-blue-900 font-semibold">Years</div>
                   <div className="text-gray-600">Experience</div>
                 </div>
               </CardContent>
@@ -195,25 +195,25 @@ export default function Home() {
       <section
         className="py-16"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('/building.webp')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('/assets/industry.webp')`,
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
-      >
+      > 
         <div className="container mx-auto px-4">
-          <div className="flex flex-row md:flex-col gap-12 md:max-w-1/2">
+          <div className="flex flex-col gap-12 md:max-w-1/2">
             <div>
-              <h2 className="text-4xl font-bold text-gray-800 mb-6 border-l-4 border-orange-600 pl-4">
+            <h2 className="text-4xl font-bold text-white mb-6 border-l-4 border-blue-900 pl-4">
                 Work with an IT Consulting Firm that Knows Your Industry.
               </h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-white mb-6">
                 The IT consulting industry is full of general technology
                 solutions aimed across any sized business. To get the best
                 outcomes, you need to work with IT consulting firm that know
                 your space.
               </p>
-              <p className="text-gray-600">
+              <p className="text-white">
                 Our IT consulting services leverage specialists with a year of
                 experience in your industry. We'll deploy best practices,
                 technology, and processes that align to the unique challenges of
@@ -223,8 +223,8 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-8">
               <div className="text-center">
-                <Server className="w-16 h-16 text-gray-700 mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-gray-800">
+                <Server className="w-16 h-16 text-white mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-white">
                   Health Care
                   <br />
                   Information
@@ -233,18 +233,18 @@ export default function Home() {
                 </h3>
               </div>
               <div className="text-center">
-                <BookOpen className="w-16 h-16 text-gray-700 mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-gray-800">Education</h3>
+                <BookOpen className="w-16 h-16 text-white mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-white">Education</h3>
               </div>
               <div className="text-center">
-                <Newspaper className="w-16 h-16 text-gray-700 mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-gray-800">
+                <Newspaper className="w-16 h-16 text-white mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-white">
                   Creative Media
                 </h3>
               </div>
               <div className="text-center">
-                <Handshake className="w-16 h-16 text-gray-700 mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-gray-800">Non-Profit</h3>
+                <Handshake className="w-16 h-16 text-white mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-white">Non-Profit</h3>
               </div>
             </div>
           </div>
@@ -282,7 +282,7 @@ export default function Home() {
                     planning experience to help you design, implement, and
                     maintain a world-class IT system at an efficient cost.
                   </p>
-                  <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold">
+                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
                     READ MORE
                   </Button>
                 </CardContent>
@@ -307,7 +307,7 @@ export default function Home() {
                     product recommendations, accurate specifications, logistics,
                     ordering, installation, and returns.
                   </p>
-                  <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold">
+                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
                     READ MORE
                   </Button>
                 </CardContent>
@@ -331,7 +331,7 @@ export default function Home() {
                     With in-depth technology assessments, you can identify areas
                     of improvement to support your business growth.
                   </p>
-                  <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold">
+                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
                     READ MORE
                   </Button>
                 </CardContent>
@@ -355,7 +355,7 @@ export default function Home() {
                     Get help implementing or managing technology from a team
                     based right here. Whether your team is
                   </p>
-                  <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold">
+                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
                     READ MORE
                   </Button>
                 </CardContent>
@@ -371,7 +371,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/IT-Consulting-Firm.webp"
+                src="/assets/testimonial.webp"
                 alt="Client Meeting"
                 className="rounded-lg shadow-lg w-full"
                 width={500}
@@ -379,7 +379,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-gray-800 mb-6 border-l-4 border-orange-600 pl-4">
+              <h2 className="text-4xl font-bold text-gray-800 mb-6 border-l-4 border-blue-900 pl-4">
                 What Clients Say About Our IT Consulting Firm !
               </h2>
               <p className="text-gray-600 mb-8">
@@ -388,7 +388,7 @@ export default function Home() {
                 Consulting With a Cause. moves, IT strategy, and managing
                 downtime.
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8">
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-8">
                 Contact Us
               </Button>
             </div>

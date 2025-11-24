@@ -32,9 +32,9 @@ export default async function BlogPostPage({ params }: PageProps) {
             {post.title}
           </h1>
           <div className="flex items-center gap-2 text-sm text-gray-500 uppercase tracking-wide font-medium">
-            <Link href="/" className="hover:text-orange-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-blue-900 transition-colors">Home</Link>
             <span>»</span>
-            <Link href="/blog" className="hover:text-orange-600 transition-colors">Blog</Link>
+            <Link href="/blog" className="hover:text-blue-900 transition-colors">Blog</Link>
             <span>»</span>
             <span className="text-gray-400 line-clamp-1 md:line-clamp-none">{post.title}</span>
           </div>
@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             />
 
             <div 
-              className="prose prose-lg max-w-none text-gray-600 prose-headings:text-gray-800 prose-a:text-orange-600 prose-img:rounded-lg"
+              className="prose prose-lg max-w-none text-gray-600 prose-headings:text-gray-800 prose-a:text-blue-900 prose-img:rounded-lg"
               dangerouslySetInnerHTML={{ __html: post.content || "" }}
             />
           </div>
@@ -69,9 +69,9 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="bg-white p-6 border-b border-gray-100">
               <h3 className="text-lg font-serif text-gray-500 mb-4">Share:</h3>
               <div className="flex gap-4">
-                <a href="#" className="text-orange-500 hover:text-orange-600"><Facebook className="w-5 h-5" /></a>
-                <a href="#" className="text-orange-500 hover:text-orange-600"><Twitter className="w-5 h-5" /></a>
-                <a href="#" className="text-orange-500 hover:text-orange-600"><Linkedin className="w-5 h-5" /></a>
+                <a href="#" className="text-blue-900 hover:text-blue-900"><Facebook className="w-5 h-5" /></a>
+                <a href="#" className="text-blue-900 hover:text-blue-900"><Twitter className="w-5 h-5" /></a>
+                <a href="#" className="text-blue-900 hover:text-blue-900"><Linkedin className="w-5 h-5" /></a>
               </div>
             </div>
 
@@ -86,11 +86,11 @@ export default async function BlogPostPage({ params }: PageProps) {
                     </div>
                     <div>
                       <Link href={`/blog/${p.slug}`}>
-                        <h4 className="text-sm font-bold text-gray-800 group-hover:text-orange-600 transition-colors line-clamp-2 mb-1">
+                        <h4 className="text-sm font-bold text-gray-800 group-hover:text-blue-900 transition-colors line-clamp-2 mb-1">
                           {p.title}
                         </h4>
                       </Link>
-                      <Link href={`/blog/${p.slug}`} className="text-xs text-orange-500 font-semibold uppercase">
+                      <Link href={`/blog/${p.slug}`} className="text-xs text-blue-900 font-semibold uppercase">
                         Read More »
                       </Link>
                     </div>
@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <Input placeholder="Full Name" className="bg-white border-gray-200" />
                 <Input placeholder="Phone" className="bg-white border-gray-200" />
                 <Input placeholder="Email" type="email" className="bg-white border-gray-200" />
-                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold">
+                <Button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold">
                   Send →
                 </Button>
               </form>

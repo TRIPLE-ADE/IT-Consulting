@@ -21,11 +21,11 @@ export default function Blog() {
         />
 
         <div className="container mx-auto px-4 relative z-20">
-          <h1 className="text-4xl font-bold mb-4 border-l-4 border-orange-600 pl-6">
+          <h1 className="text-4xl font-bold mb-4 border-l-4 border-blue-800 pl-6">
             Blog
           </h1>
           <div className="flex items-center text-sm font-medium text-gray-300 space-x-2">
-            <Link href="/" className="hover:text-orange-600 transition-colors">
+            <Link href="/" className="hover:text-blue-900 transition-colors">
               Home
             </Link>
             <span>&raquo;</span>
@@ -50,7 +50,7 @@ export default function Blog() {
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute top-4 right-4 bg-orange-600 text-white text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wide">
+                    <div className="absolute top-4 right-4 bg-blue-900 text-white text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wide">
                       {post.category}
                     </div>
                     {/* Overlay icon matching design (magnifying glass / link) */}
@@ -59,7 +59,7 @@ export default function Blog() {
                     </div>
                   </div>
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight hover:text-orange-600 transition-colors cursor-pointer">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight hover:text-blue-900 transition-colors cursor-pointer">
                       {post.title}
                     </h3>
                     <p className="text-gray-600 mb-6 leading-relaxed">
@@ -67,7 +67,7 @@ export default function Blog() {
                     </p>
                     <div className="flex items-center justify-between border-t border-gray-100 pt-6">
                       <span
-                        className="text-orange-600 font-bold text-sm uppercase tracking-wide hover:text-orange-700 flex items-center gap-1"
+                        className="text-blue-900 font-bold text-sm uppercase tracking-wide hover:text-blue-900 flex items-center gap-1"
                       >
                         Read More &raquo;
                       </span>
