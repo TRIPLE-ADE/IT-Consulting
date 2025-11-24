@@ -20,15 +20,15 @@ import { Button, Card, CardContent } from "@/components/ui";
 export default function Home() {
   return (
     <div className="min-h-screen font-sans">
-      <section
-        id="home"
-        className="relative min-h-svh bg-cover bg-center flex items-center"
-        style={{
-          backgroundImage: `url('/assets/hero.webp')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section id="home" className="relative min-h-svh w-full flex items-center">
+        <Image
+          src="/assets/hero.webp"
+          alt="Hero"
+          fill
+          fetchPriority="high"
+          preload
+          objectFit="cover"
+        />
         <div
           className="absolute inset-0 z-10 opacity-70"
           style={{
@@ -43,7 +43,8 @@ export default function Home() {
               IT Services
             </h1>
             <p className="text-xl text-white mb-8">
-              Streamline and secure your business operations with our expert guidance.
+              Streamline and secure your business operations with our expert
+              guidance.
             </p>
             <Link href="/contact">
               <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-8 py-6 text-lg">
@@ -63,9 +64,9 @@ export default function Home() {
               <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-6">
                 <Users className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                <h2 className="text-3xl font-bold text-gray-800 mb-4">
                   People
-                </h3>
+                </h2>
                 <p className="text-gray-600 font-medium">
                   Our team consists of dedicated account managers and certified
                   technicians who are committed to your success and care about
@@ -78,9 +79,9 @@ export default function Home() {
               <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-6">
                 <Eye className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   Purpose
-                </h3>
+                </h2>
                 <p className="text-gray-600 font-medium">
                   We simplify complex technology to save you money and keep you
                   ahead of the curve, ensuring your peace of mind.
@@ -92,12 +93,13 @@ export default function Home() {
               <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-6">
                 <Settings className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   Process
-                </h3>
+                </h2>
                 <p className="text-gray-600 font-medium">
-                  Our time-tested delivery methods, clear communication processes,
-                  and premium tools ensure consistent, high-quality results.
+                  Our time-tested delivery methods, clear communication
+                  processes, and premium tools ensure consistent, high-quality
+                  results.
                 </p>
               </CardContent>
             </Card>
@@ -106,12 +108,13 @@ export default function Home() {
               <div className="absolute mx-4 inset-0 h-1 bg-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-6">
                 <CreditCard className="w-16 h-16 text-gray-700 mb-4" />
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   Our Strategy
-                </h3>
+                </h2>
                 <p className="text-gray-600 font-medium">
-                  We help you navigate industry challenges, secure your data from
-                  threats, and eliminate IT barriers that stunt your growth.
+                  We help you navigate industry challenges, secure your data
+                  from threats, and eliminate IT barriers that stunt your
+                  growth.
                 </p>
               </CardContent>
             </Card>
@@ -241,9 +244,7 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <Newspaper className="w-16 h-16 text-white mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-white">
-                  Creative Media
-                </h3>
+                <h3 className="text-xl font-bold text-white">Creative Media</h3>
               </div>
               <div className="text-center">
                 <Handshake className="w-16 h-16 text-white mx-auto mb-3" />
@@ -336,8 +337,7 @@ export default function Home() {
                   </h3>
                   <p className="text-gray-600 mb-6">
                     With in-depth technology assessments, you can identify areas
-                    of improvement to support your business growth and
-                    security.
+                    of improvement to support your business growth and security.
                   </p>
                   <Link href="/services/it-assessment-services">
                     <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
