@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   Users,
   Eye,
@@ -42,12 +43,14 @@ export default function Home() {
               IT Services
             </h1>
             <p className="text-xl text-white mb-8">
-              Streamline and secure your business operations in just 90 Days.
+              Streamline and secure your business operations with our expert guidance.
             </p>
-            <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-8 py-6 text-lg">
-              ASK FOR CONSULTATION{" "}
-              <ChevronsRight className="w-10 h-10" strokeWidth={4} />
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-8 py-6 text-lg">
+                ASK FOR CONSULTATION{" "}
+                <ChevronsRight className="w-10 h-10" strokeWidth={4} />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -64,9 +67,9 @@ export default function Home() {
                   People
                 </h3>
                 <p className="text-gray-600 font-medium">
-                  You deserve the best. We have the best. Simply put, we care
-                  every single one of us, from the account managers to the
-                  technicians.
+                  Our team consists of dedicated account managers and certified
+                  technicians who are committed to your success and care about
+                  your business.
                 </p>
               </CardContent>
             </Card>
@@ -79,9 +82,8 @@ export default function Home() {
                   Purpose
                 </h3>
                 <p className="text-gray-600 font-medium">
-                  Your security and peace of mind drive us to be better
-                  everyday. Simplifying the complex, saving you money and
-                  staying ahead of rapidly changing technology.
+                  We simplify complex technology to save you money and keep you
+                  ahead of the curve, ensuring your peace of mind.
                 </p>
               </CardContent>
             </Card>
@@ -94,9 +96,8 @@ export default function Home() {
                   Process
                 </h3>
                 <p className="text-gray-600 font-medium">
-                  It's not just what we do, but how we do it. Our time tested
-                  delivery methods, communication process and premium software
-                  and hardware tools.
+                  Our time-tested delivery methods, clear communication processes,
+                  and premium tools ensure consistent, high-quality results.
                 </p>
               </CardContent>
             </Card>
@@ -109,9 +110,8 @@ export default function Home() {
                   Our Strategy
                 </h3>
                 <p className="text-gray-600 font-medium">
-                  We'll help you navigate the tech challenges of your industry,
-                  keep your data secure hackers, and eliminate IT issues that
-                  stunt growth.
+                  We help you navigate industry challenges, secure your data from
+                  threats, and eliminate IT barriers that stunt your growth.
                 </p>
               </CardContent>
             </Card>
@@ -125,7 +125,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/trusted.webp"
+                src="/assets/about/about-1.webp"
                 alt="Consulting Team"
                 width={500}
                 height={500}
@@ -137,13 +137,18 @@ export default function Home() {
                 Why We're the Most Trusted
               </h2>
               <p className="text-gray-600 mb-8 text-lg">
-                With an unwavering passion to help your people succeed, years of
-                technical experience backed by our custom solutions, process and
-                unparalleled customer service, we deliver every time.
+                Our combination of technical expertise, custom solutions, and
+                unparalleled customer service ensures we deliver results every
+                time. We are passionate about helping your people succeed.
               </p>
-              <Button size="lg" className="bg-blue-800 hover:bg-blue-900 text-white font-semibold text-lg px-10">
-                READ MORE <ArrowRight className="w-10 h-10" strokeWidth={4} />
-              </Button>
+              <Link href="/about">
+                <Button
+                  size="lg"
+                  className="bg-blue-800 hover:bg-blue-900 text-white font-semibold text-lg px-10"
+                >
+                  READ MORE <ArrowRight className="w-10 h-10" strokeWidth={4} />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -172,7 +177,7 @@ export default function Home() {
                 <div>
                   <div className="text-5xl font-bold text-gray-800">100+</div>
                   <div className="text-blue-900 font-semibold">Clients</div>
-                  <div className="text-gray-600">Satisfied Customer</div>
+                  <div className="text-gray-600">Satisfied Customers</div>
                 </div>
               </CardContent>
             </Card>
@@ -200,25 +205,23 @@ export default function Home() {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
-      > 
+      >
         <div className="container mx-auto px-4">
           <div className="flex flex-col gap-12 md:max-w-1/2">
             <div>
-            <h2 className="text-4xl font-bold text-white mb-6 border-l-4 border-blue-900 pl-4">
-                Work with an IT Consulting Firm that Knows Your Industry.
+              <h2 className="text-4xl font-bold text-white mb-6 border-l-4 border-blue-900 pl-4">
+                Partner with IT Specialists Who Understand Your Industry
               </h2>
               <p className="text-white mb-6">
                 The IT consulting industry is full of general technology
-                solutions aimed across any sized business. To get the best
-                outcomes, you need to work with IT consulting firm that know
-                your space.
+                solutions. To get the best outcomes, you need a partner who
+                knows your space.
               </p>
               <p className="text-white">
-                Our IT consulting services leverage specialists with a year of
-                experience in your industry. We'll deploy best practices,
-                technology, and processes that align to the unique challenges of
-                your industry keeping your data secure, your network running,
-                and budget in check.
+                Our services leverage specialists with years of experience in
+                your industry. We deploy best practices, technology, and
+                processes that align with your unique challenges, keeping your
+                data secure, your network running, and your budget in check.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-8">
@@ -259,15 +262,15 @@ export default function Home() {
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
             Whether you need advisory services from our IT management
-            consultants, or fully outsourced managed IT services – think of us
-            as your technology partner, anywhere in USA.
+            consultants or fully outsourced managed IT services, think of us as
+            your technology partner anywhere in the USA.
           </p>
 
           <div className="grid md:grid-cols-2">
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/IT-Strategic-Planning.webp"
+                  src="/assets/services/strategic-1.webp"
                   alt="IT Strategic Planning"
                   className="w-full h-full object-cover"
                   width={500}
@@ -278,13 +281,15 @@ export default function Home() {
                     IT Strategic Planning
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Consulting With a Cause brings many years of strategic IT
-                    planning experience to help you design, implement, and
-                    maintain a world-class IT system at an efficient cost.
+                    We bring years of strategic IT planning experience to help
+                    you design, implement, and maintain a world-class IT system
+                    at an efficient cost.
                   </p>
-                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
-                    READ MORE
-                  </Button>
+                  <Link href="/services/it-strategic-planning">
+                    <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
+                      READ MORE <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </div>
             </Card>
@@ -292,7 +297,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/IT-Procurement-Services.webp"
+                  src="/assets/services/procurement-1.webp"
                   alt="IT Procurement Services"
                   className="w-full h-full object-cover"
                   width={500}
@@ -303,13 +308,15 @@ export default function Home() {
                     IT Procurement Services
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Consulting With a Cause IT procurement services provide
-                    product recommendations, accurate specifications, logistics,
-                    ordering, installation, and returns.
+                    Our IT procurement services provide product recommendations,
+                    accurate specifications, logistics, ordering, installation,
+                    and returns.
                   </p>
-                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
-                    READ MORE
-                  </Button>
+                  <Link href="/services/it-procurement-services">
+                    <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
+                      READ MORE <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </div>
             </Card>
@@ -317,7 +324,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/IT-Assessment-Services.webp"
+                  src="/assets/services/assessment-1.webp"
                   width={500}
                   height={500}
                   alt="IT Assessment Services"
@@ -329,11 +336,14 @@ export default function Home() {
                   </h3>
                   <p className="text-gray-600 mb-6">
                     With in-depth technology assessments, you can identify areas
-                    of improvement to support your business growth.
+                    of improvement to support your business growth and
+                    security.
                   </p>
-                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
-                    READ MORE
-                  </Button>
+                  <Link href="/services/it-assessment-services">
+                    <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
+                      READ MORE <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </div>
             </Card>
@@ -341,7 +351,7 @@ export default function Home() {
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <Image
-                  src="/IT-Services.webp"
+                  src="/assets/services/manages-1.webp"
                   width={500}
                   height={500}
                   alt="Managed IT Services"
@@ -352,12 +362,15 @@ export default function Home() {
                     Managed IT Services
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Get help implementing or managing technology from a team
-                    based right here. Whether your team is
+                    Get help implementing or managing technology from a local
+                    team. We support your operations whether you are remote or
+                    on-site.
                   </p>
-                  <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold">
-                    READ MORE
-                  </Button>
+                  <Link href="/services/managed-it-services">
+                    <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold flex items-center gap-2">
+                      READ MORE <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </div>
             </Card>
@@ -380,17 +393,19 @@ export default function Home() {
             </div>
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-6 border-l-4 border-blue-900 pl-4">
-                What Clients Say About Our IT Consulting Firm !
+                What Clients Say About Our IT Consulting Firm
               </h2>
               <p className="text-gray-600 mb-8">
-                We helped various companies optimize their operations with a 5
-                year IT strategy that saw return in their first 6 months with
-                Consulting With a Cause. moves, IT strategy, and managing
-                downtime.
+                We helped various companies optimize their operations with a
+                5-year IT strategy that saw a return in their first 6 months
+                with Consulting With a Cause. They handled our office moves, IT
+                strategy, and minimized downtime.
               </p>
-              <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-8">
-                Contact Us
-              </Button>
+              <Link href="/contact">
+                <Button className="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-8">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

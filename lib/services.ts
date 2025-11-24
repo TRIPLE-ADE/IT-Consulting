@@ -3,23 +3,20 @@ export const services = [
     slug: "it-assessment-services",
     title: "IT Assessment Services",
     shortDescription:
-      "With in-depth technology assessments, you can identify areas of improvement to support your business growth.",
-    image: "/assets/services/assessment-1.webp",
-    brochure: "/assets/services/assessment-2.webp",
+      "Uncover hidden risks and opportunities in your current IT setup with our comprehensive evaluation.",
+    image: "/assets/services/services-1.webp",
     content: {
-      headline:
-        "Does Your IT Infrastructure Support Your Goals and Objectives?",
+      headline: "Know Where You Stand with Your Technology",
       intro:
-        "With in-depth technology assessments, you can identify areas of improvement to support your business growth.",
-      whyTitle:
-        "Why choose consulting with a cause for IT assessment services?",
+        "Before you can improve, you need to know what's working and what isn't. Our IT Assessment provides a clear, unbiased snapshot of your current infrastructure. We look beyond the surface to identify security vulnerabilities, performance bottlenecks, and cost-saving opportunities that you might be missing.",
+      whyTitle: "What You Gain from Our Assessment:",
       points: [
-        "Learn everything about your IT infrastructure with detailed insights in a comprehensive report.",
-        "Address all areas of your IT infrastructure and gain insight on how to maximize your operations.",
-        "Simplify your technology stack by removing redundant or outmoded hardware and software, and replacing it with simpler, cheaper and easier-to-manage systems.",
-        "Get expert suggestions to overcome your IT shortcomings and boost efficiency with industry best practices.",
-        "Identify the gaps in your IT operations to be resolved by consulting with a cause or your in-house team.",
-        "Gain a deep understanding into the weaknesses and strengths of your system with a network assessment",
+        "A complete inventory of your hardware and software assets.",
+        "Identification of critical security gaps before they become breaches.",
+        "Recommendations to retire outdated tech and reduce licensing costs.",
+        "A clear roadmap for upgrading your systems to match industry standards.",
+        "Peace of mind knowing exactly where your technology risks lie.",
+        "Data-driven insights to support your budget and strategy decisions.",
       ],
     },
   },
@@ -27,19 +24,18 @@ export const services = [
     slug: "it-procurement-services",
     title: "IT Procurement Services",
     shortDescription:
-      "consulting with a cause IT procurement services provide product recommendations, accurate specifications.",
-    image: "/assets/services/procurement-1.webp",
-    brochure: "/assets/services/procurement-2.webp",
+      "Stop overpaying for hardware and software. We source the right tools at the best prices for your needs.",
+    image: "/assets/services/services-2.webp",
     content: {
-      headline:
-        "Need a reliable, fast, and cost effective hardware and software supplier?",
+      headline: "Smarter Purchasing, Better Value",
       intro:
-        "Consulting with a cause IT procurement services provide product recommendations, accurate specifications, logistics, ordering, installation, and returns.",
-      whyTitle: "IT procurement services from consulting with a cause:",
+        "Buying business technology shouldn't be a headache. Whether you need a single laptop or a complete server room overhaul, our procurement service handles the heavy lifting. We leverage our vendor relationships to get you preferred pricing and ensure you buy exactly what you need no more, no less.",
+      whyTitle: "Why Let Us Handle Your Procurement?",
       points: [
-        "Many years of experience matching business needs with IT products and services",
-        "Leverage our partnerships with the IT industry’s leading manufacturers",
-        "Make your new systems and your team productive immediately with our installation and configuration services",
+        "Access to volume discounts and exclusive vendor pricing.",
+        "Expert advice to ensure compatibility with your existing systems.",
+        "We handle all the logistics: shipping, tracking, and returns.",
+        "Optional pre-configuration services so devices arrive ready to use.",
       ],
     },
   },
@@ -47,36 +43,33 @@ export const services = [
     slug: "it-strategic-planning",
     title: "IT Strategic Planning",
     shortDescription:
-      "An IT strategy starts by answering a straightforward question: how should your business leverage technology for improvement.",
-    image: "/assets/services/strategic-1.webp",
-    brochure: "/assets/services/strategic-2.webp",
+      "Turn technology into your competitive advantage with a roadmap aligned to your business goals.",
+    image: "/assets/services/services-3.webp",
     content: {
-      headline: "Align Technology with Your Business Vision",
-intro: "An IT strategy starts by answering a straightforward question: how should your business leverage technology for improvement and growth? Every business needs an IT strategy one that can exploit this leverage and launch your firm's productivity and communication capabilities sky high.\n\nWith many years of experience supporting top businesses, we know how to leverage IT for your industry and your business' specific challenges. We've guided many businesses in your industry to successful IT strategies.\n\nIt starts by learning about your business goals and determining whether technology is facilitating or hindering them. How does the IT strategy leverage cloud, mobile, security, and business continuity technologies? How does the IT strategy align with current and future business goals and mission? How does your overall IT direction address the growth and development of the business?\n\nWe provide a written roadmap for all our clients, which we call your IT Action Plan. The Action Plan outlines recommended IT initiatives in the form of strategically planned projects that will move your business and IT goals forward quickly.\n\nBy presenting our overall direction in the form of well-defined projects, business owners and managers can immediately address specific vulnerabilities or take actions that propel your business goals in a short amount of time.",
-      whyTitle:
-        "Through consulting with a cause, your company will draw on the following strengths:",
-      points: ["Leverage Many years of IT strategic planning experience"],
+      headline: "Technology That Drives Business Growth",
+      intro:
+        "Technology should propel your business forward, not hold it back. Our strategic planning service bridges the gap between your business vision and your IT reality. We work with you to create a long-term technology strategy that supports your growth, scales with your needs, and fits your budget.\n\nWe don't just talk about digital transformation, we build practical plans. From cloud migration to cybersecurity frameworks, we map out the steps you need to take today to be ready for tomorrow.",
+      whyTitle: "Strategic Benefits We Deliver:",
+      points: ["A clear, prioritized IT roadmap for the next 1-3 years."],
     },
   },
   {
     slug: "it-helpdesk-services",
     title: "IT Helpdesk Services",
     shortDescription:
-      "Accelerate IT issue resolution with round-the-clock responsive IT help desk services Why choose consulting with a cause.",
-    image: "/assets/services/helpdesk-1.webp",
-    brochure: "/assets/services/helpdesk-2.webp",
+      "Fast, friendly tech support that keeps your team productive and your frustration levels low.",
+    image: "/assets/services/services-4.webp",
     content: {
-      headline: "IT helpdesk services",
+      headline: "Support That Actually Helps",
       intro:
-        "Accelerate IT issue resolution with round-the-clock responsive IT help desk services.",
-      whyTitle:
-        "Why choose consulting with a cause for IT helpdesk services in NYC?",
+        "Downtime is expensive. Frustrated employees are even more costly. Our Helpdesk Service provides instant access to expert technicians who resolve issues quickly. Whether it's a password reset or a printer glitch, we treat every ticket with urgency so your team can get back to work.",
+      whyTitle: "The Difference Our Helpdesk Makes:",
       points: [
-        "Solve problems before they impact your business",
-        "Enjoy guaranteed service levels with compensation for downtime.",
-        "Rely on a single source for helpdesk services that cover hardware, software, data center, and devices.",
-        "Benefit from instant and courteous call pickup with remote helpdesk services from localized technicians.",
-        "Manage costs with flat rates for our helpdesk service",
+        "Proactive monitoring often fixes issues before you notice them.",
+        "US-based support team that communicates clearly.",
+        "Support for Macs, PCs, mobile devices, and servers.",
+        "Transparent reporting so you see exactly what we're fixing.",
+        "Predictable monthly pricing with no hidden per-incident fees.",
       ],
     },
   },
@@ -84,18 +77,17 @@ intro: "An IT strategy starts by answering a straightforward question: how shoul
     slug: "managed-it-services",
     title: "Managed IT Services",
     shortDescription:
-      "Get help implementing or managing technology from a team based right here. Whether your team is working from home.",
-    image: "/assets/services/managed-1.webp",
-    brochure: "/assets/services/managed-2.webp",
+      "Your entire IT department, outsourced. We manage everything so you can focus on running your business.",
+    image: "/assets/services/services-5.webp",
     content: {
-      headline: "Do You Need Help with IT Consulting at Business?",
+      headline: "Complete IT Management for Peace of Mind",
       intro:
-        "Get help implementing or managing technology from a team based right here. Whether your team is working from home or working remotely, Power can help you streamline your operations.",
-      whyTitle: "Why Choose Us Among Tech Companies?",
+        "Imagine never having to worry about your technology again. With our Managed IT Services, we take full responsibility for your network, security, and devices. We act as your internal IT department, handling maintenance, updates, security, and support—all for a flat monthly fee.",
+      whyTitle: "Why Partner with Us?",
       points: [
-        "Let us handle the day-to-day management and maintenance of your devices, network, and cyber security; so your team can focus on running the business.",
-        "Get guidance and recommendations to drive digital transformation while reducing long term IT costs with a fully costed IT strategy and roadmap.",
-        "Stay one step ahead of hackers and secure your private data with full service training, monitoring, and security software.",
+        "Focus 100% on your business, not on fixing computers.",
+        "Reduce the risk of cyberattacks with enterprise-grade security.",
+        "Eliminate surprise repair bills with proactive maintenance.",
       ],
     },
   },
@@ -103,7 +95,7 @@ intro: "An IT strategy starts by answering a straightforward question: how shoul
     slug: "support",
     title: "Support",
     shortDescription:
-      "Consulting With a cause helps SMBs control their spiraling IT costs as well as eliminate unexpected IT disruptions.",
-    image: "/IT-Services.webp",
+      "Reliable assistance when you need it most to control costs and eliminate disruptions.",
+    image: "/assets/services/services-6.webp",
   },
 ];

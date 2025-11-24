@@ -27,7 +27,7 @@ export default async function ServicePage({ params }: PageProps) {
     <div className="min-h-screen bg-background font-sans">
       <section
         style={{
-          backgroundImage: "url('/services-hero.webp')",
+          backgroundImage: "url('/assets/section-hero.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -42,19 +42,16 @@ export default async function ServicePage({ params }: PageProps) {
         />
 
         <div className="container mx-auto px-4 relative z-20">
-            <h1 className="text-4xl font-bold mb-4 border-l-4 border-blue-800 pl-6">
-              {service.title}
-            </h1>
-            <div className="flex items-center text-sm font-medium text-gray-300 space-x-2">
-              <Link
-                href="/"
-                className="hover:text-blue-900 transition-colors"
-              >
-                Home    
-              </Link>
-              <span>&raquo;</span>
-              <span className="text-white">{service.title}</span>
-            </div>
+          <h1 className="text-4xl font-bold mb-4 border-l-4 border-blue-800 pl-6">
+            {service.title}
+          </h1>
+          <div className="flex items-center text-sm font-medium text-gray-300 space-x-2">
+            <Link href="/" className="hover:text-blue-900 transition-colors">
+              Home
+            </Link>
+            <span>&raquo;</span>
+            <span className="text-white">{service.title}</span>
+          </div>
         </div>
       </section>
 
@@ -63,35 +60,30 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Sidebar */}
-            <div className="lg:col-span-1 space-y-8">
+            <div className="lg:col-span-1 space-y-8 md:sticky top-36 self-start">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <ul className="space-y-1">
-                  {services.map((s) => (
-                    <li key={s.slug}>
-                      <Link
-                        href={`/services/${s.slug}`}
-                        className={`block px-4 py-3 text-sm font-semibold transition-colors border-l-2 ${
-                          s.slug === slug
-                              ? "bg-white text-blue-900 border-blue-900 shadow-sm"
-                            : "text-gray-600 border-transparent hover:bg-white hover:text-blue-900 hover:border-blue-300"
-                        }`}
-                      >
-                        {s.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                  {services.map((s) => {
+                    const isActive = s.slug === slug;
+                    const href =
+                      s.slug === "support" ? "/contact" : `/services/${s.slug}`;
 
-              {/* Brochure/Contact Widget */}
-              <div className="relative">
-                <Image
-                  src={service.brochure || ""}
-                  alt={service.title}
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover"
-                />
+                    return (
+                      <li key={s.slug}>
+                        <Link
+                          href={href}
+                          className={`block px-4 py-3 text-sm font-semibold transition-colors border-l-2 ${
+                            isActive
+                              ? "bg-white text-blue-900 border-blue-900 shadow-sm"
+                              : "text-gray-600 border-transparent hover:bg-white hover:text-blue-900 hover:border-blue-300"
+                          }`}
+                        >
+                          {s.title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             </div>
 
@@ -125,7 +117,10 @@ export default async function ServicePage({ params }: PageProps) {
                     key={index}
                     className="flex gap-4 items-center text-gray-600 leading-relaxed"
                   >
-                   <ChevronsRight className="w-6 h-6 font-bold shrink-0" strokeWidth={2.5} />
+                    <ChevronsRight
+                      className="w-6 h-6 font-bold shrink-0"
+                      strokeWidth={2.5}
+                    />
                     <span>{point}</span>
                   </li>
                 ))}

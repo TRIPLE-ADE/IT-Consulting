@@ -25,8 +25,8 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-background font-sans">
-      <section className="relative bg-gray-50 py-16 border-b border-gray-200" style={{ backgroundImage: `url("/single-blog-hero.webp")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-       <div className="absolute inset-0 bg-black/50 z-10 opacity-85" style={{ backgroundImage: `linear-gradient(250deg, rgba(255, 255, 255, 1) 100%, rgba(0, 0, 0, 1) 71%)` }} />
+      <section className="relative bg-gray-50 py-16 border-b border-gray-200">
+       <div className="absolute inset-0  z-10 "/>
         <div className="container mx-auto px-4 relative z-20">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4 max-w-4xl mx-auto leading-tight">
             {post.title}

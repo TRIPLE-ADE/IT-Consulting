@@ -9,27 +9,18 @@ export default function Contact() {
       <section
         className="relative h-[450px] flex items-center bg-gray-900 text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/contact-hero.webp')",
+          backgroundImage: `url('/assets/section-hero.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
         <div
-          className="absolute inset-0 bg-black/50 z-10 opacity-20"
+          className="absolute inset-0 z-10 opacity-90"
           style={{
-            backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%)`,
+            backgroundImage: `linear-gradient(250deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 71%)`,
           }}
         />
-        {/* Background overlay icons effect - recreated simplistically */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center opacity-20 pointer-events-none overflow-hidden gap-8">
-          <div className="w-32 h-32 rounded-full border-2 border-white flex items-center justify-center">
-            <Mail className="w-16 h-16" />
-          </div>
-          <div className="w-32 h-32 rounded-full border-2 border-white flex items-center justify-center mt-24">
-            <Phone className="w-16 h-16" />
-          </div>
-        </div>
 
         <div className="container mx-auto px-4 relative z-20">
           <h1 className="text-4xl font-bold mb-4 border-l-4 border-blue-800 pl-6">

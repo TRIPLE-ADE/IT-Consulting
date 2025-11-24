@@ -43,7 +43,7 @@ export function Header() {
           <Image
             sizes="(max-width: 180px) 100vw, 180px"
             fill
-            src="/logo.webp"
+            src="/assets/logo.webp"
             alt="Consulting with a Cause"
             className="object-contain"
             priority

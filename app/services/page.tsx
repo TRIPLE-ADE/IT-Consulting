@@ -9,7 +9,7 @@ export default function Services() {
     <div className="min-h-screen bg-background font-sans">
       <section
         style={{
-          backgroundImage: "url('/services-hero.webp')",
+          backgroundImage: "url('/assets/section-hero.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

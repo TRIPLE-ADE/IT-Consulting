@@ -8,7 +8,7 @@ export default function Blog() {
     <div className="min-h-screen bg-background font-sans">
       <section
         style={{
-          backgroundImage: "url('/blog-hero.webp')",
+          backgroundImage: "url('/assets/section-hero.webp')",
           backgroundPosition: "center center",
         }}
         className="relative h-[450px] flex items-center bg-gray-900 text-white overflow-hidden"

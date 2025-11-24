@@ -23,7 +23,7 @@ export function Footer() {
               <Image
                 sizes="(max-width: 381px) 100vw, 381px"
                 fill
-                src="/logo.webp"
+                src="/assets/logo.webp"
                 alt="Consulting with a Cause"
                 className="object-contain filter invert brightness-0"
               />
@@ -111,7 +111,7 @@ export function Footer() {
         </div>
 
         <div className="container mx-auto mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row gap-4 justify-between items-center">
-          <p className="text-gray-500 text-sm text-center md:text-left">© 2018 All rights reserved</p>
+          <p className="text-gray-500 text-sm text-center md:text-left">©  {new Date().getFullYear()} All rights reserved</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-blue-600 transition-colors text-white">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

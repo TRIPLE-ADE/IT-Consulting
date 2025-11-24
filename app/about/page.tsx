@@ -9,6 +9,7 @@ import {
   Award,
   Handshake,
   Lightbulb,
+  ArrowRight,
 } from "lucide-react";
 
 import { Button, Card, CardContent } from "@/components/ui";
@@ -19,7 +20,7 @@ export default function AboutUs() {
       <section
         className="relative min-h-[450px] flex items-center bg-gray-900 text-white overflow-hidden"
         style={{
-          backgroundImage: `url('/about-us.webp')`,
+          backgroundImage: `url('/assets/section-hero.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -56,9 +57,9 @@ export default function AboutUs() {
                 </h2>
               </div>
               <p className="text-gray-600 mb-6">
-                With an unwavering passion to help your people succeed, years of
-                technical experience backed by our custom solutions, process and
-                unparalleled customer service, we deliver every time.
+                Our combination of technical expertise, custom solutions, and
+                unparalleled customer service ensures we deliver results every
+                time. We are passionate about helping your people succeed.
               </p>
             </div>
 
@@ -75,10 +76,9 @@ export default function AboutUs() {
                     01. Planning & Strategy
                   </h3>
                   <p className="text-gray-600">
-                    A Strategic Planning Consultant helps organizations
-                    streamline their priorities by directing them toward the
-                    company mission, goals, and objectives through stakeholder
-                    participation.
+                    We help organizations prioritize their goals and align their
+                    technology with their mission and objectives through
+                    strategic planning and stakeholder participation.
                   </p>
                 </div>
               </CardContent>
@@ -97,10 +97,9 @@ export default function AboutUs() {
                     02. Client's Satisfaction
                   </h3>
                   <p className="text-gray-600">
-                    A client's satisfaction can change over time depending on
-                    the success of your consulting - and because their
-                    satisfaction is what determines whether they'll continue to
-                    use your business in the future.
+                    Your satisfaction is our priority. We build long-term
+                    relationships based on trust and consistent success, ensuring
+                    our services evolve with your needs.
                   </p>
                 </div>
               </CardContent>
@@ -115,7 +114,7 @@ export default function AboutUs() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <Image
-                src="/Meet-Our-Brand-New.webp"
+                src="/assets/about/about-1.webp"
                 width={500}
                 height={500}
                 alt="Brand New Solution"
@@ -129,14 +128,16 @@ export default function AboutUs() {
                 </h2>
               </div>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Products and Solutions are Driven by a core team of Boost
-                advisors that help clients anticipate and adapt to today's
-                business issues in innovative ways that mesh intellectual
-                property with our consulting services.
+                Our core team of advisors helps clients anticipate and adapt to
+                today's business challenges with innovative solutions. We
+                combine intellectual property with expert consulting to drive
+                growth.
               </p>
-              <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded">
-                Read More
-              </Button>
+              <Link href="/services">
+                <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded flex items-center gap-2">
+                  READ MORE <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -149,7 +150,7 @@ export default function AboutUs() {
             <div className="order-2 md:order-1 bg-zinc-100 p-6">
               <div className="border-l-4 border-blue-900 pl-6">
                 <h2 className="text-4xl font-bold text-gray-900">
-                  Some Reasons to Work Together
+                  Reasons to Partner with Us
                 </h2>
               </div>
 
@@ -166,10 +167,9 @@ export default function AboutUs() {
                         We Believe in Best Quality
                       </h3>
                       <p className="text-gray-600">
-                        They are natural collaborators who understand that
-                        linking arms with their clients and making their success
-                        depend upon the client's satisfaction is the only way to
-                        build a sustainable book of business.
+                        We collaborate closely with our clients, making their
+                        success our own. Our commitment to quality ensures that
+                        we build sustainable, long-term partnerships.
                       </p>
                     </div>
                   </CardContent>
@@ -184,13 +184,12 @@ export default function AboutUs() {
                     />
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        We Believe in Good Relation
+                        We Believe in Good Relations
                       </h3>
                       <p className="text-gray-600">
-                        Why do some external consulting relationships seem to
-                        thrive, while others can become very challenging? But
-                        there is a simple process for creating a win/win
-                        situation for consulting engagements.
+                        We follow a proven process to create win-win consulting
+                        engagements that thrive. Communication and transparency
+                        are key to our successful relationships.
                       </p>
                     </div>
                   </CardContent>
@@ -208,10 +207,9 @@ export default function AboutUs() {
                         We Believe in Abilities
                       </h3>
                       <p className="text-gray-600">
-                        A consultant is a person who's an expert in a particular
-                        field who gives professional advice to individuals and
-                        businesses in their area of expertise, usually on a
-                        temporary or contract basis.
+                        Our consultants are experts in their fields, providing
+                        professional advice and hands-on support to businesses,
+                        ensuring you have the right skills for every project.
                       </p>
                     </div>
                   </CardContent>
@@ -220,7 +218,7 @@ export default function AboutUs() {
             </div>
             <div className="order-1 md:order-2 relative">
               <Image
-                src="/Consultant-profesional.webp"
+                src="/assets/about/about-2.webp"
                 width={500}
                 height={500}
                 alt="Reasons to work together"
@@ -237,7 +235,7 @@ export default function AboutUs() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <Image
-                src="/Consultant.webp"
+                src="/assets/about/about-3.webp"
                 width={500}
                 height={500}
                 alt="IT Consulting Help"
@@ -247,25 +245,27 @@ export default function AboutUs() {
             <div>
               <div className="border-l-4 border-blue-900 pl-6 mb-6">
                 <h2 className="text-4xl font-bold text-gray-900 mb-2">
-                  Do You Need Help with IT Consulting
+                  Do You Need Help with IT Consulting?
                 </h2>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Get help implementing or managing technology from a team based
-                right here in business. Whether your team is working from home
-                or working remotely, consulting with a cause can help you
-                streamline your operations.
+                Get local, expert help implementing and managing your
+                technology. Whether your team is working from home or remotely,
+                we can help you streamline your operations and improve
+                efficiency.
               </p>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Why Choose Us ?
+                Why Choose Us?
               </h3>
               <p className="text-gray-600 mb-8">
-                With So Many Choices Available Our Dedication And Focus On Your
-                Business Is What Sets Us Apart.
+                With so many choices available, our dedication and focus on your
+                specific business needs is what sets us apart.
               </p>
-              <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded">
-                READ MORE
-              </Button>
+              <Link href="/services">
+                <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded flex items-center gap-2">
+                  READ MORE <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ export default function AboutUs() {
                   <div className="text-blue-900 font-semibold uppercase tracking-wide text-sm">
                     Clients
                   </div>
-                  <div className="text-gray-600">Satisfied Customer</div>
+                  <div className="text-gray-600">Satisfied Customers</div>
                 </div>
               </CardContent>
             </Card>
@@ -330,31 +330,33 @@ export default function AboutUs() {
             <div className="order-2 md:order-1">
               <div className="border-l-4 border-blue-900 pl-6 mb-6">
                 <h2 className="text-4xl font-bold text-gray-900 mb-2">
-                  We Provide Solution on Your Business
+                  We Provide Solutions for Your Business
                 </h2>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                On the other hand we denounce with righteous indignation and
-                dislike men who are so beguiled and demoralized by the charms of
-                pleasure of the moment so blinded by desire that they cannot
-                foresee.
+                We focus on delivering practical, scalable solutions that address
+                your specific business pain points. Our goal is to empower your
+                organization with technology that drives efficiency and
+                innovation.
               </p>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                What We Do ?
+                What We Do?
               </h3>
               <p className="text-gray-600 mb-8">
-                Consultants' expert research, solutions, and experience to
-                improve business performance. They are problem-solvers who go
-                into a business to offer objective insights and help put
-                suggested strategies into place.
+                Our consultants bring expert research and proven strategies to
+                improve your business performance. We are problem-solvers who
+                offer objective insights and implement effective solutions to
+                help you succeed.
               </p>
-              <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded">
-                READ MORE
-              </Button>
+              <Link href="/services">
+                <Button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-6 text-lg font-semibold rounded flex items-center gap-2">
+                  READ MORE <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
             </div>
             <div className="order-1 md:order-2 relative">
               <Image
-                src="/about-image.webp"
+                src="/assets/about/about-4.webp"
                 width={500}
                 height={500}
                 alt="Business Solutions"
